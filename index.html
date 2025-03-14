@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica no.6</title>
+    <style type="text/css">
+        body {
+            font-family: "Lora", serif;
+            background-color: #d0eae6;
+            color: #242f56;
+            text-align: left;
+        }
+        h1 {
+            color: #185391;
+            font-size: 50px;
+            font-family: "Oswald", sans-serif;
+            text-align: center;
+        }
+        fieldset {
+            width: 50%;
+            margin: auto; 
+            
+        }
+        table {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #df9aaa;
+            padding: 20px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="GET">
+        <h1>AURA BUS</h1><br>
+        <fieldset>
+            <legend>Datos del viaje</legend>
+            <table border="0">
+                <tr>
+                    <td>Forma de viaje</td>
+                    <td>
+                        <select name="viaje">
+                            <option disabled selected value="">Seleccione su forma de viaje</option>
+                            <option value="ida">Ida</option>
+                            <option value="ida y vuelta">Ida y vuelta</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre"></td>
+                </tr>
+                <tr>
+                    <td>Apellido(s)</td>
+                    <td><input type="text" name="apellidos"></td>
+                </tr>
+                <tr>
+                    <td>Desde donde viajas</td>
+                    <td>
+                        <select name="origen">
+                            <option disabled selected value="">Origen</option>
+                            <option value="acapulco">Acapulco de Juárez, Gro</option>
+                            <option value="cdmx">Ciudad de México</option>
+                            <option value="veracruz">Veracruz, Ver</option>
+                            <option value="puebla">Puebla, Pue</option>
+                            <option value="cancun">Cancún, Q.R.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hacía donde viajas</td>
+                    <td>
+                        <select name="destino">
+                            <option disabled selected value="">Destino</option>
+                            <option value="acapulco">Acapulco de Juárez, Gro</option>
+                            <option value="cdmx">Ciudad de México</option>
+                            <option value="veracruz">Veracruz, Ver</option>
+                            <option value="puebla">Puebla, Pue</option>
+                            <option value="cancun">Cancún, Q.R.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adulto(s)</td>
+                    <td>
+                        <input type="checkbox" name="descuento[]" value="normal">
+                        <select name="boleto_adulto">
+                            <option disabled selected value="">Boletos</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Niño(s)</td>
+                    <td><input type="checkbox" name="descuento[]" value="niño">
+                        <select name="boleto_niño">
+                            <option disabled selected value="">Boletos</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adulto mayor</td>
+                    <td><input type="checkbox" name="descuento[]" value="adulto_mayor">
+                        <select name="boleto_adulto_mayor">
+                            <option disabled selected value="">Boletos</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha</td>
+                    <td>
+                        <select name="dias">
+                            <option disabled selected value="">Día</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="meses">
+                            <option disabled selected value="">Mes</option>
+                            <option value="Enero">Enero</option>
+                            <option value="Febrero">Febrero</option>
+                            <option value="Marzo">Marzo</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Mayo">Mayo</option>
+                            <option value="Junio">Junio</option>
+                            <option value="Julio">Julio</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Septiembre">Septiembre</option>
+                            <option value="Octubre">Octubre</option>
+                            <option value="Noviembre">Noviembre</option>
+                            <option value="Diciembre">Diciembre</option>
+                        </select>
+                        <select name="year">
+                            <option disabled selected value="">Año</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                        </select>  </td>
+                    <tr>
+                        <td>Hora de ida</td> <td><input type="time" name="hora"></td>
+                        <td>Hora de llegada</td><td><input type="time" name="hora_llegada"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Asientos</td>
+                    <td><input type="text" name="asientos" placeholder="Ej: 12, 14, 15"></td>
+
+                </tr>
+                <tr>
+                    <td>Método de pago</td>
+                    <td>
+                        <select name="pago">
+                            <option disabled selected value="">Seleccione su forma de pago</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="debito">Tarjeta de débito</option>
+                        </select> </td>
+                </tr>
+                <tr>
+                    <td>Monto a pagar</td>
+                    <td><input type="text" name="monto"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <input type="submit" value="Enviar información"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
